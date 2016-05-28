@@ -11,12 +11,11 @@ except ImportError:
 	sys.path.append('../')
 	import datacore
 
-
+	
 
 class dbcontrol(object):
 	def __init__(self):
 		pass
-
 
 if __name__ == '__main__':
 	a=dbcontrol()
