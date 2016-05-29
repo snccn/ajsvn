@@ -11,8 +11,8 @@ def serializer(fileraw):
 	handleobj=fileraw
 	targetRaw=json.JSONDecoder().decode(fileraw)
 	#print targetRaw
-	formartoutput(targetRaw)
-
+	#formartoutput(targetRaw)
+	return targetRaw
 
 def formartoutput(targetRaw):
 	output=[]
@@ -34,4 +34,5 @@ def formartoutput(targetRaw):
 
 if __name__ == '__main__':
 	fo=open('../data/1007.json','r')
-	serializer(fo.read())
+	tar=serializer(fo.read())
+	formartoutput(tar)
