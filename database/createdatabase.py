@@ -33,7 +33,7 @@ class dbcontrol(object):
 	def makesqlusetemplate(self,fobj):
 		pass
 
-if __name__ == '__main__':
+def build():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	a=dbcontrol()
@@ -51,5 +51,7 @@ if __name__ == '__main__':
 			except sqlite3.IntegrityError:
 				continue
 			#print sqltemplate.gotdataraw(i+n)
+if __name__ == '__main__':
+	build()
 
 
