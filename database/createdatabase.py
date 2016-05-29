@@ -36,7 +36,7 @@ class dbcontrol(object):
 if __name__ == '__main__':
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-	a=dbcontrol()
+	dbob=dbcontrol()
 	#b=a.getMoeshipinfo(1)
 	#print b
 
@@ -47,9 +47,10 @@ if __name__ == '__main__':
 	for i,j,k in os.walk("../data/"):
 		for n in k:
 			try:
-				a.addamoeship(sqltemplate.gotdataraw(i+n))
+				dbob.addamoeship(sqltemplate.gotdataraw(i+n))
 			except sqlite3.IntegrityError:
 				continue
+	dbob.dbconn.close()
 			#print sqltemplate.gotdataraw(i+n)
 
 

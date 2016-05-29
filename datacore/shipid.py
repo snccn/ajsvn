@@ -23,4 +23,4 @@ shipid9=range(1068,1076)+[1080,1082,1083,1084,1085,1099,1135,1136,1143,1183,8009
 # update the 1007 has been added 
 ship_all=shipid0+shipid1+shipid2+shipid3+shipid4+shipid5+shipid6+shipid7+shipid8+shipid9+[1007]
 
-print ship_all
+# print ship_all
