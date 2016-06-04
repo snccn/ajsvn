@@ -39,5 +39,5 @@ def getinfo(id):
     fileobj.close()
 
 if __name__ == '__main__':
-    for i in ship_id.ship_all:
+    for i in shipid.ship_all:
         getinfo(i)
