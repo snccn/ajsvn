@@ -33,7 +33,7 @@ class dbcontrol(object):
 	def makesqlusetemplate(self,fobj):
 		pass
 
-if __name__ == '__main__':
+def build():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	dbob=dbcontrol()
@@ -52,5 +52,7 @@ if __name__ == '__main__':
 				continue
 	dbob.dbconn.close()
 			#print sqltemplate.gotdataraw(i+n)
+if __name__ == '__main__':
+	build()
 
 
