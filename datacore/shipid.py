@@ -4,7 +4,7 @@ shipid0=range(1,16)+range(18,31)
 #31~90
 shipid1=range(31,91)
 #91~120
-shipid2=range(91,115)+range(116,118)+[120]
+shipid2=range(91,115)+range(115,118)+[120]
 #121~150
 shipid3=[121]+range(123,145)+[149,150]
 #151~180
