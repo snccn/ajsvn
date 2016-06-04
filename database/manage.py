@@ -12,16 +12,16 @@ except ImportError:
 	import datacore
 	import createdatabase
 
-
 def getinfo(id):
 	selpobj=createdatabase.dbcontrol()
 	info=selpobj.getMoeshipinfo(id)
 	print info
 	pass
 def rebuild():
-	selpobj.createdatabase.dbcontrol()
+	selpobj=createdatabase.dbcontrol()
 	selpobj.createtable()
 	createdatabase.build()
+	print("build complete")
 	pass
 def help():
 	print "this is the help document"
